@@ -1,0 +1,40 @@
+变量说明
+ListingKey每个列表的唯一键，与API中列表对象中使用的“键”值相同。
+ListingNumber唯一标识网站上显示的公众列表的编号。
+***ListingCreationDate创建列表的日期。
+***CreditGrade在上市开始时分配的信用评级。适用于2009年之前的列表，仅适用于这些列表。
+期限贷款的长度以月为单位表示。
+***LoanStatus贷款的当前状态：Cancelled，Chargedoff，Completed，Current，Defaulted，FinalPaymentInProgress，PastDue。 PastDue状态将伴随着拖欠桶。
+***ClosedDate关闭日期适用于已取消，已完成，已抵押和违约的贷款状态。
+借款人APR借款人贷款的年度百分比率（APR）。
+***BorrowerRate借款人对此贷款的利率。
+***LenderYield贷款人的贷款收益率。贷方收益率等于贷款利率减去服务费。
+***EstimatedEffectiveYield有效收益率等于借款人利率（i）减去服务费率，（ii）减去未收取的未收取的撇帐利息，（iii）加上估计收取的滞纳金。适用于2009年7月以后发放的贷款。
+***EstimatedLoss预计损失是预计的主要损失。适用于2009年7月以后发放的贷款。
+EstimatedReturn在创建列表时分配给列表的估计回报。估计收益是估计有效收益率与估计损失率之间的差额。适用于2009年7月以后发放的贷款。
+***ProsperRating（数字）创建列表时指定的Prosper评级：0  -  N / A，1  -  HR，2  -  E，3  -  D，4  -  C，5  -  B，6  -  A，7  -  AA。适用于2009年7月以后发放的贷款。
+ProsperRating（Alpha）在AA  -  HR之间创建列表时分配的Prosper评级。适用于2009年7月以后发放的贷款。
+***ProsperScore使用历史Prosper数据构建的自定义风险评分。得分范围从1-10，其中10是最佳或最低风险得分。适用于2009年7月以后发放的贷款。
+***ListingCategory借款人在上市时选择的列表类别：0  - 不可用，1  - 债务合并，2  - 家居装修，3  - 商业，4 ?? - 个人贷款，5  - 学生使用，6  - 自动，7-其他，8  - 婴儿和领养，9  - 船，10  - 化妆品程序，11  - 订婚戒指，12  - 绿色贷款，13  - 家庭费用，14  - 大额购买，15  - 医疗/牙科，16  - 摩托车，17  -  RV，18 - 税收，19  - 度假，20  - 婚礼贷款
+***BorrowerState创建清单时借款人地址的两个字母缩写。
+***职业借款人在创建上市时选择的职业。
+***EmploymentStatus借款人在上市时的就业状况。
+***EmploymentStatusDuration创建列表时的就业状态的月份长度。
+***IsBorrowerHomeowner借款人如果对其信用状况进行抵押或提供确认他们是房主的文件，将被归类为同性恋者。
+CurrentlyInGroup指定借款人在创建商家信息时是否在某个组中。
+***GroupKey借款人所属集团的关键。如果借款人没有集团所属关系，则价值为空。
+DateCreditPulled提取信用档案的日期。
+CreditScoreRangeLower表示由消费者信用评级机构提供的借款人信用评分范围的较低值。
+CreditScoreRangeUpper表示由消费者信用评级机构提供的借款人信用评分范围的上限值。
+FirstRecordedCreditLine第一个信用额度开立的日期。
+CurrentCreditLines提取信用状况时的当前信用额度。
+OpenCreditLines提取信用档案时的未结信用额度。
+TotalCreditLinespast7years拉动信用状况时过去七年中的信用额度。
+OpenRevolvingAccounts拉动信用档案时的开放循环帐户数。
+OpenRevolvingMonthlyPayment在提取信用档案时对周转帐户的每月付款。
+查询最后6个月在信用状况被提取时过去六个月的查询数量。
+TotalInquiries拉取信用档案时的查询总数。
+CurrentDelinquencies在提取信用档案时拖欠的帐户数。
+在信用状况被提取时，欠款金额欠款。
+拖欠率最长7年当信用状况被提取时过去7年的拖欠数量。
+PublicRecordsLast10Years信用档案w过去10年中的公共记录数量
